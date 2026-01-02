@@ -4,6 +4,13 @@ using namespace std;
 int main()
 {
     /*Triangle Pattern print*/
+    /**
+     *      *
+     *     **
+     *    ***
+     *   ****
+     *  *****
+     */
     int count = 5;
     for (int i = 1; i <= count; i++)
     {
@@ -23,7 +30,13 @@ int main()
         cout << '\n';
     }
 
-    /** ABCD */
+    /**
+     * ABCD
+     * ABCD
+     * ABCD
+     * ABCD
+     * ABCD
+     */
     for (int i = 0; i < count; i++)
     {
         char ch = 'A';
@@ -33,6 +46,72 @@ int main()
             /* code */
             cout << ch;
             ch = ch + 1;
+        }
+        cout << endl;
+    }
+
+    /**
+     * 123
+     * 456
+     * 789
+     */
+
+    int item = 3;
+    int num = 1;
+    for (int i = 1; i <= item; i++)
+    {
+        for (int j = item; j >= 1; j--)
+        {
+            cout << (1 + (i * item - j));
+            // cout << num;
+            num++;
+        }
+        cout << endl;
+    }
+
+    /**
+     * ABC
+     * DEF
+     * GHI
+     */
+
+    char ch = 'A';
+    for (int i = 1; i <= item; i++)
+    {
+        for (int j = 1; j <= item; j++)
+        {
+            cout << ch;
+            ch++;
+        }
+        cout << endl;
+    }
+
+    /**
+     * A
+     * BB
+     * CCC
+     */
+    char charecter = 'A';
+    for (int i = 1; i <= item; i++)
+    {
+        for (int j = 1; j <= i; j++)
+        {
+            cout << charecter;
+        }
+        charecter++;
+        cout << endl;
+    }
+     
+    /**
+     * 1
+     * 12
+     * 123
+     */
+    for (int i = 1; i <= item; i++)
+    {
+        for (int j = 1; j <= i; j++)
+        {
+            cout << j;
         }
         cout << endl;
     }
