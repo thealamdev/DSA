@@ -20,7 +20,7 @@ int main()
             /* code */
             if (j >= (count + 1) - i)
             {
-                cout << i;
+                cout << i << ' ';
             }
             else
             {
