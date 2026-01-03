@@ -101,7 +101,7 @@ int main()
         charecter++;
         cout << endl;
     }
-     
+
     /**
      * 1
      * 12
@@ -110,6 +110,23 @@ int main()
     for (int i = 1; i <= item; i++)
     {
         for (int j = 1; j <= i; j++)
+        {
+            cout << j;
+        }
+        cout << endl;
+    }
+
+    /**
+     * 1
+     * 21
+     * 321
+     * 4321
+     */
+
+    int limit = 4;
+    for (int i = 1; i <= limit; i++)
+    {
+        for (int j = i; (j <= i && j != 0); j--)
         {
             cout << j;
         }
