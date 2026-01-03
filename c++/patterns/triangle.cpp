@@ -126,9 +126,28 @@ int main()
     int limit = 4;
     for (int i = 1; i <= limit; i++)
     {
-        for (int j = i; (j <= i && j != 0); j--)
+        for (int j = i; j > 0; j--)
         {
             cout << j;
+        }
+        cout << endl;
+    }
+
+    /**
+     * Floyd's Triangle Pattern:
+     * 1
+     * 23
+     * 456
+     * 78910
+     */
+
+    int traversal = 1;
+    for (int i = 1; i <= limit; i++)
+    {
+        for (int j = i; j > 0; j--)
+        {
+            cout << traversal;
+            traversal++;
         }
         cout << endl;
     }
