@@ -151,4 +151,29 @@ int main()
         }
         cout << endl;
     }
+
+    /**
+     * Inverted Triange Pattern:
+     * 1111
+     *  222
+     *   33
+     *    4
+     */
+
+    int invertedLimit = 6;
+    for (int i = 1; i <= invertedLimit; i++)
+    {
+        for (int j = 1; j <= invertedLimit; j++)
+        {
+            if (i > j)
+            {
+                cout << ' ';
+            }
+            else
+            {
+                cout << i;
+            }
+        }
+        cout << endl;
+    }
 }
