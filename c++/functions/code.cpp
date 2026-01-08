@@ -16,7 +16,7 @@ int Factorial(int f)
     int sum = 1;
     for (int i = f; i > 0; i--)
     {
-        sum = sum * i;
+        sum *= i;
     }
     return sum;
 }
