@@ -11,8 +11,19 @@ int PrintSum(int len)
     return sum;
 }
 
+int Factorial(int f)
+{
+    int sum = 1;
+    for (int i = f; i > 0; i--)
+    {
+        sum = sum * i;
+    }
+    return sum;
+}
+
 int main()
 {
 
     cout << PrintSum(10) << endl;
+    cout << Factorial(5) << endl;
 }
