@@ -9,7 +9,7 @@ int main()
      *    12321
      *   1234321
      */
-    int count = 4;
+    int count = 50;
     for (int i = 1; i < count; i++)
     {
         for (int j = 1; j <= (count - i); j++)
