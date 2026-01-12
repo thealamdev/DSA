@@ -4,21 +4,22 @@ using namespace std;
 /**
  * WAF to find a number prime or not.
  */
-int main()
+string isPrime(int number)
 {
-    int number = 4;
+    if (number == 1)
+        return "Not Prime";
 
-    for (int i = 3; i <= 9; i++)
+    for (int i = 2; i * i <= number; i++)
     {
         if (number % i == 0)
-        {
-            cout << "Prime" << endl;
-            break;
-        }
-        else
-        {
-            cout << "Not Prime" << endl;
-            break;
-        }
+            return "Not Prime";
     }
+    return "Prime";
+}
+int main()
+{
+    int number;
+    cout << "Enter a number" << endl;
+    cin >> number;
+    cout << isPrime(number) << endl;
 }
