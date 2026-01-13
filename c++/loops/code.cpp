@@ -3,7 +3,7 @@ using namespace std;
 
 int main()
 {
-    int num = 9;
+    int num = 4;
     bool isPrime = true;
     for (int i = 2; i * i <= num; i++)
     {
