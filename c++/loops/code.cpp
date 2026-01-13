@@ -1,6 +1,20 @@
 #include <iostream>
 using namespace std;
 
+/**
+ * WAF to reverse a number and print it.
+ */
+
+int reverseNumbr(int n){
+    int res;
+    int reminder;
+    while(n>0){
+        reminder = n% 10;
+        res = n / 10;
+        
+    }
+}
+
 int main()
 {
     int num = 4;
