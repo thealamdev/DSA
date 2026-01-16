@@ -4,15 +4,23 @@ using namespace std;
 /**
  * WAF to reverse a number and print it.
  */
-
-int reverseNumbr(int n){
+int reverseNumbr(int n)
+{
     int res;
     int reminder;
-    while(n>0){
-        reminder = n% 10;
+    float len = round(log10((n) + 1)) - 1;
+    int result;
+
+    while (len >= 0)
+    {
+        reminder = n % 10;
         res = n / 10;
-        
+        n = res;
+        cout << "r" << reminder << "l" << len << endl;
+        result += reminder * pow(10, len);
+        len--;
     }
+    return result;
 }
 
 int main()
@@ -36,5 +44,10 @@ int main()
     {
         cout << "Not prime" << endl;
     }
+
+    int reverseDigit;
+    cout << "Enter a number to reverse it: ";
+    cin >> reverseDigit;
+    cout << reverseNumbr(reverseDigit) << endl;
     return 0;
 }
