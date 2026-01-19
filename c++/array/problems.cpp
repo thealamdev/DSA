@@ -7,31 +7,23 @@ using namespace std;
 
 void minMax(int numbers[], int size)
 {
-    int min;
-    int max;
+    int max = INT_MIN;
+    int min = INT_MAX;
 
-    for (int i = 0; i < size - 1; i++)
+    for (int i = 0; i < size; i++)
     {
-        if (min < numbers[i])
+        if (numbers[i] < min)
         {
-            max = numbers[i];
+            min = numbers[i];
         }
     }
 
+    // cout << min << endl;
     cout << min << endl;
-    cout << max << endl;
 }
 
 int main()
 {
-    int size = 5;
-    int numbers[size];
-    cout << "Enter numbers:" << endl;
-
-    for (int i = 0; i < size; i++)
-    {
-        cin >> numbers[i];
-    }
-
-    minMax(numbers, size);
+    int numbers[] = {10, 20, 30, 40, 50};
+    minMax(numbers, 5);
 }
