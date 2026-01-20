@@ -23,8 +23,8 @@ void minMax(int numbers[], int size)
         }
     }
 
-    cout << min << endl;
-    cout << max << endl;
+    cout << "Max Number: " << max << endl;
+    cout << "Min Number: " << min << endl;
 }
 
 /**
@@ -48,12 +48,29 @@ void minMaxIndex(int numbers[], int size)
             minIndex = i;
         }
     }
-    cout << maxIndex << endl;
-    cout << minIndex << endl;
+    cout << "Max index: " << maxIndex << endl;
+    cout << "Min index: " << minIndex << endl;
+}
+
+/**
+ * Find out a target value in an array by using linear search
+ */
+
+void linearSearch(int numbers[], int size, int target)
+{
+    for (int i = 0; i < size; i++)
+    {
+        if (target == numbers[i])
+        {
+            cout << "Target " << target << " found at index: " << i << endl;
+            return;
+        }
+    }
 }
 int main()
 {
     int numbers[] = {10, 20, 30, 40, 50};
     minMax(numbers, 5);
     minMaxIndex(numbers, 5);
+    linearSearch(numbers, 5, 30);
 }
