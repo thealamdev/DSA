@@ -67,10 +67,32 @@ int linearSearch(int numbers[], int size, int target)
     }
     return -1;
 }
+
+/**
+ * Reverse an Array (2 Pointer) (37:38): Reverse all elements of an array in place (without creating a new array).
+ */
+
+void reverseArr(int numbers[], int size)
+{
+    for (int i = 0; i < size; i++)
+    {
+        swap(numbers[i], numbers[size - i - 1]);
+        if (i >= size - i - 1)
+        {
+            break;
+        }
+    }
+
+    for (int i = 0; i < size; i++)
+    {
+        cout << numbers[i] << " ";
+    }
+}
 int main()
 {
     int numbers[] = {10, 20, 30, 40, 50};
     minMax(numbers, 5);
     minMaxIndex(numbers, 5);
     cout << "Target found at index: " << linearSearch(numbers, 5, 100) << endl;
+    reverseArr(numbers, 5);
 }
