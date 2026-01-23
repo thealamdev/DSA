@@ -4,9 +4,10 @@ using namespace std;
 
 int main()
 {
-    int arr[] = {5, 2, 1, 9, 7};
+    int arr[] = {5, 2, 1, 9, 7, 1, 9, 7};
     int size = sizeof(arr) / sizeof(arr[0]);
     swapMinMax(arr, size);
     getSumAndProduct(arr, size);
+    printUniqueElements(arr, size);
     return 0;
 }
