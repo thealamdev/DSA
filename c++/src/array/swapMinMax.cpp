@@ -2,7 +2,7 @@
 #include "../../headers/array/array.h"
 using namespace std;
 
-void swipMinMax(int arr[], int size)
+void swapMinMax(int arr[], int size)
 {
     int max = INT_MIN;
     int min = INT_MAX;

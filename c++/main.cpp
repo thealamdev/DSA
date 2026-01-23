@@ -6,6 +6,7 @@ int main()
 {
     int arr[] = {5, 2, 1, 9, 7};
     int size = sizeof(arr) / sizeof(arr[0]);
-    swipMinMax(arr, size);
+    swapMinMax(arr, size);
+    getSumAndProduct(arr, size);
     return 0;
 }

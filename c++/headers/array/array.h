@@ -1,6 +1,7 @@
 #ifndef ARRAY_H
 #define ARRAY_H
 
-void swipMinMax(int arr[], int size);
+void swapMinMax(int arr[], int size);
+void getSumAndProduct(int arr[], int size);
 
 #endif
