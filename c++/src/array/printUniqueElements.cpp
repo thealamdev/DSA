@@ -9,12 +9,22 @@ using namespace std;
  */
 void printUniqueElements(int arr[], int size)
 {
-    int multiplier = 0;
+    int newArr[] = {};
     for (int i = 0; i < size; i++)
     {
-        if ((multiplier ^ arr[i]) != 0)
+        for (int j = 0; j < size; j++)
         {
-            cout << arr[i] << endl;
+            if (arr[i] != arr[j])
+            {
+               newArr[i] = arr[i];    
+            }
         }
+    }
+
+    int len = sizeof(newArr) / sizeof(newArr[0]);
+
+
+    for(int i=0; i<len; i++){
+        cout << newArr[i] << " ";
     }
 }
