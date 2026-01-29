@@ -12,4 +12,5 @@ void linearSearch(vector<int> &vec, int target)
             cout << "Target " << item << " " << "found at " << index << " position";
         index++;
     }
+    cout << endl;
 }

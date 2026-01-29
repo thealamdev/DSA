@@ -4,5 +4,6 @@
 using namespace std;
 
 void linearSearch(vector<int> &vec, int size);
+void reverseVector(vector<int> &vec);
 
 #endif

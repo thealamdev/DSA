@@ -16,6 +16,7 @@ int main()
     int target = 6;
 
     linearSearch(vec, target);
+    reverseVector(vec);
 
     return 0;
 }
