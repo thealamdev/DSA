@@ -1,6 +1,7 @@
 #include <iostream>
 #include <vector>
 #include "headers/array/array.h"
+#include "headers/vector/vector.h"
 using namespace std;
 
 int main()
@@ -11,20 +12,10 @@ int main()
     // getSumAndProduct(arr, size);
     // printUniqueElements(arr, size);
 
-    vector<int> vec;
-    cout << "Size: " << vec.size() << endl;
-    vec.push_back(25);
-    vec.push_back(35);
-    vec.push_back(41);
-    cout << "After push back size: = " << vec.size() << endl;
-    vec.pop_back();
-    cout << "Value at 1 position " << vec.at(1) << endl;
-    cout << "First value " << vec.front() << endl;
-    cout << "Last value " << vec.back() << endl;
-    for (int i : vec)
-    {
-        cout << i << endl;
-    }
+    vector<int> vec = {2, 5, 6, 3, 7};
+    int target = 6;
+
+    linearSearch(vec, target);
 
     return 0;
 }
