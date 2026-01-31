@@ -15,8 +15,11 @@ int main()
     vector<int> vec = {2, 5, 6, 3, 7};
     int target = 6;
 
-    linearSearch(vec, target);
-    reverseVector(vec);
+    vector<string> strs = {"flower", "flow", "flight"};
+
+    // linearSearch(vec, target);
+    // reverseVector(vec);
+    longestCommonPrefix(strs);
 
     return 0;
 }
