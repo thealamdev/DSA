@@ -12,14 +12,16 @@ int main()
     // getSumAndProduct(arr, size);
     // printUniqueElements(arr, size);
 
-    vector<int> vec = {2, 5, 6, 3, 7};
+    vector<int> vec = {2, 3, -8, 7, -1, 2, 3};
+    int len = vec.size();
     int target = 6;
 
     vector<string> strs = {"flower", "flow", "flight"};
 
     // linearSearch(vec, target);
     // reverseVector(vec);
-    longestCommonPrefix(strs);
+    // longestCommonPrefix(strs);
+    maximumSubarray(vec, len);
 
     return 0;
 }

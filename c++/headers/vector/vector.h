@@ -6,5 +6,6 @@ using namespace std;
 void linearSearch(vector<int> &vec, int size);
 void reverseVector(vector<int> &vec);
 void longestCommonPrefix(vector<string> strs);
+void maximumSubarray(vector<int> &vec, int size);
 
 #endif

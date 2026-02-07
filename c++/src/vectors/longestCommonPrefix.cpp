@@ -6,7 +6,7 @@ void longestCommonPrefix(vector<string> strs)
 {
     string prfix = "";
     int index = 0;
-    for (string str : strs)
+    for (string str : strs)                  
     {
         for (int i = 0; i < str.length(); i++)
         {
