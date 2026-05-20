@@ -2,6 +2,7 @@
 #include <vector>
 #include "headers/array/array.h"
 #include "headers/vector/vector.h"
+#include "headers/pointer/pointer.h"
 using namespace std;
 
 int main()
@@ -21,7 +22,8 @@ int main()
     // linearSearch(vec, target);
     // reverseVector(vec);
     // longestCommonPrefix(strs);
-    maximumSubarray(vec, len);
+    // maximumSubarray(vec, len);
+    pointer();
 
     return 0;
 }
